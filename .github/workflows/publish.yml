@@ -8,7 +8,7 @@ permissions:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     outputs:
       tag: ${{ steps.update-package-version.outputs.version }}
     steps:
